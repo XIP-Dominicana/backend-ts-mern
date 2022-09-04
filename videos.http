@@ -1,0 +1,29 @@
+
+### Get all videos
+GET http://localhost:8080/videos
+
+### Get one video
+GET http://localhost:8080/videos/63152254bc072db6ba863337
+
+### Create a video
+POST http://localhost:8080/videos/
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=_RZ-T6TxP7w&list=WL&index=2",
+  "title": "MERN STACK & Typescript (Mongodb, Express, React, Node con Typescript) - #1 Backend ",
+  "description": "Bienvenidos al video Práctico del Stack MERN (Mongodb, Express, React y Node). En el ejemplo del día de hoy aprenderemos a crear una aplicación Web conformada tanto por un backend y Frontend todo enteramente escrito en Typescript"
+}
+
+### Delete a video
+DELETE http://localhost:8080/videos/63152254bc072db6ba863337
+
+### Update a video
+PUT http://localhost:8080/videos/631523cae1826e8abd66a923
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=Rh9pDG8kdX4&list=WL&index=3",
+  "title": "Power BI Dev Camp: Embedding Power BI reports using React.JS",
+  "description": "This session will build upon the earlier Power BI Dev Camp session which examined embedding reports with the Power BI JavaScript API. In this session, campers will learn to develop single-page applications (SPAs) to embed Power BI reports using the ever-popular React.js library."
+}
